@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_gray"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/next_page_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center_vertical|right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="13dp"
+        android:text="@string/next_page"
+        android:textColor="@color/next_page_text_color"
+        android:textSize="14dp"
+        android:clickable="true"
+        android:visibility="invisible"/>
+    
+    <ListView
+        android:id="@+id/video_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/next_page_button"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="5dp" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Bhavya/Documents/GitHub/AndroidSamples/KamcordInterviewApp/app/src/main/res/layout/activity_main.xml -->
